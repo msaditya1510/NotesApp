@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notes App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <h2>My Notes</h2>
+
+    <!-- Text area to write notes -->
+    <textarea id="noteArea" placeholder="Write your notes here using markdown..."></textarea><br>
+
+    <!-- Buttons -->
+    <button onclick="saveNote()">Save</button>
+    <button onclick="downloadNote()">Export as .txt</button>
+
+    <!-- Markdown preview -->
+    <div id="preview"></div>
+
+    <!-- Marked.js for Markdown support -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script> <!-- Link to the JS file -->
+</body>
+</html>
